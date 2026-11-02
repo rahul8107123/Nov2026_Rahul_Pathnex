@@ -1,0 +1,16 @@
+# Github Day2 code
+- name: Install Nginx on Pathnex server
+  hosts: all
+  become: yes
+
+  task:
+   - name: Install nginx
+     yum:
+       name: nginx
+       state: present
+
+  Docker
+# Docker Installation & First Container
+docker --version
+docker run ubuntu echo "hellow Pathnex"
+
